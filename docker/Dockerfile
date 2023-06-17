@@ -1,4 +1,4 @@
-FROM postgres:13-bullseye
+FROM postgres:15-bullseye
 
 ###
 # Set WORKDIR
@@ -13,11 +13,11 @@ WORKDIR $INSTALLWORKDIR
 ###
 
 ENV POSTGIS_VERSION 3
-ENV OSM2PGSQL_VERSION 1.5.1
-ENV OPENSTREETMAP_CARTO_VERSION 5.4.0
+ENV OSM2PGSQL_VERSION 1.8.1
+ENV OPENSTREETMAP_CARTO_VERSION 5.7.0
 ENV MAPNIK_VERSION 3.1
-ENV NODEJS_VERSION 16.x
-ENV PSYCOPG2_VERSION 2.9.1
+ENV NODEJS_VERSION 18.x
+ENV PSYCOPG2_VERSION 2.9.6
 
 ###
 # Install dependencies
@@ -119,6 +119,3 @@ RUN \
         software-properties-common \
         make cmake g++ && \
     apt-get autoremove -y
-
-
-        
