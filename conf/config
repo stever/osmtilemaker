@@ -4,8 +4,8 @@ VERSION=1.1
 
 # OSM DATA SOURCE
 #################
-OSM_LATEST_FILE_NAME=hamburg-latest.osm.pbf
-OSM_LATEST_FILE_DOWNLOAD_URL=https://download.geofabrik.de/europe/germany/${OSM_LATEST_FILE_NAME}
+OSM_LATEST_FILE_NAME=scotland-latest.osm.pbf
+OSM_LATEST_FILE_DOWNLOAD_URL=https://download.geofabrik.de/europe/great-britain/${OSM_LATEST_FILE_NAME}
 
 # DOCKER CONFIG
 ###############
@@ -80,12 +80,12 @@ MAXZOOM=10
 # - you can get your bbox limits graphically from http://tools.geofabrik.de/calc/ or http://harrywood.co.uk/maps/uixapi/xapi.html
 # - you can estimate number and size of generated tiles thanks to http://tools.geofabrik.de/calc/
 
-## Hamburg
-BBOX_NAME='Hamburg'
-MIN_LONG=9.8086
-MIN_LAT=53.419
-MAX_LONG=10.2096
-MAX_LAT=53.667
+## Scotland -9.06 54.42 -0.25 61.09
+BBOX_NAME='Scotland'
+MIN_LONG=-9.06
+MIN_LAT=54.42
+MAX_LONG=-0.25
+MAX_LAT=61.09
 
 ## World extent
 #BBOX_NAME='World'
